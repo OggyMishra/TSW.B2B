@@ -61,6 +61,20 @@ CREATE TABLE [MINV] ([ID] int NOT NULL Primary Key Identity(1000000000,1)
 );
 GO
 
+CREATE TABLE [SINV] ([ID] int NOT NULL Primary Key Identity(1000000000,1)
+, [MINVID] int NOT NULL
+, [SNO] int NOT NULL
+, [ITEM_ID] int NOT NULL 
+, [QTY] decimal(10,3) NOT NULL
+, [RATE] decimal(15,2) NOT NULL
+, [AMT1] decimal(15,2) NOT NULL
+, [DISC_P] int 
+, [AMT2] decimal(15,2) NOT NULL
+, [ADDTXT1] nvarchar(255)
+, [ADDTXT2] nvarchar(255) 
+);
+GO
+
 
 
 

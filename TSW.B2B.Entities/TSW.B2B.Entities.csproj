@@ -127,6 +127,8 @@
       <Link>Properties\ProductVersion.cs</Link>
     </Compile>
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="Block.cs" />
+    <Compile Include="Group.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
