@@ -4,6 +4,7 @@
 	using System.Data;
 	using System.Data.SqlClient;
 	using Common.Constants;
+	using Common.Constants;
 
 	public interface ISqlRunner {
 		T ExecuteScalar<T>(string query);

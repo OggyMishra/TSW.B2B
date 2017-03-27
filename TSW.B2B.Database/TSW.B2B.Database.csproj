@@ -53,12 +53,11 @@
     <Compile Include="SqlRunner.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Verisk.Mozart.Common\TSW.B2B.Common.csproj">
-      <Project>{a0509f96-be42-4e5d-8c51-afaa372ce904}</Project>
+    <ProjectReference Include="..\TSW.B2B.Common\TSW.B2B.Common.csproj">
+      <Project>{A0509F96-BE42-4E5D-8C51-AFAA372CE904}</Project>
       <Name>TSW.B2B.Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Resources\Scripts.resx">
       <Generator>ResXFileCodeGenerator</Generator>
