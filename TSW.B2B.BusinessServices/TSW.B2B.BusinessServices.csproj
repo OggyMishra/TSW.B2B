@@ -165,7 +165,6 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <AdditionalFiles Include="stylecop.json" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
@@ -181,7 +180,7 @@
       <Project>{033d6058-d562-495f-a116-bc3b5ac2bba0}</Project>
       <Name>TSW.B2B.Repositories</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Verisk.Mozart.BusinessObjects\TSW.B2B.BusinessObjects.csproj">
+    <ProjectReference Include="..\TSW.B2B.BusinessObjects\TSW.B2B.BusinessObjects.csproj">
       <Project>{c54ae975-a726-4cea-b305-fecd1005b891}</Project>
       <Name>TSW.B2B.BusinessObjects</Name>
     </ProjectReference>

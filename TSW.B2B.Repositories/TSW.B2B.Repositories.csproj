@@ -152,7 +152,7 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Verisk.Mozart.Entities\TSW.B2B.Entities.csproj">
+    <ProjectReference Include="..\TSW.B2B.Entities\TSW.B2B.Entities.csproj">
       <Project>{ac1010e6-de65-4460-ae64-bcb1adf3fd10}</Project>
       <Name>TSW.B2B.Entities</Name>
     </ProjectReference>
