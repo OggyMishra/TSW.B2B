@@ -1,7 +1,9 @@
+DECLARE @dbname nvarchar(128)
+SET @dbname = 'EstimateHistory'
 IF (EXISTS (SELECT name 
 FROM master.dbo.sysdatabases 
-WHERE ('[' + name + ']' = 'EstimateHistory'
-OR name = 'EstimateHistory')))
+WHERE ('[' + name + ']' = @dbname
+OR name = @dbname)))
 BEGIN
 ALTER database EstimateHistory SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 DROP Database EstimateHistory
