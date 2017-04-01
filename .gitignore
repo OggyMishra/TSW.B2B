@@ -3,3 +3,24 @@
 ################################################################################
 
 /Verisk.Mozart.Entities/StyleCop.Cache
+/TSW-B2B.Repo.Test
+/packages
+/TSW-B2B.Web.Tests/bin/Debug
+/TSW-B2B.Web.Tests/obj/Debug
+/TSW.B2B.BusinessObjects/bin/Debug
+/TSW.B2B.BusinessObjects/obj/Debug
+/TSW.B2B.BusinessServices/bin/Debug
+/TSW.B2B.BusinessServices/obj/Debug
+/TSW.B2B.Common/bin/Debug
+/TSW.B2B.Common/obj/Debug
+/TSW.B2B.Database/bin/Debug
+/TSW.B2B.Database/obj/Debug
+/TSW.B2B.Database.Test/bin/Debug
+/TSW.B2B.Database.Test/obj/Debug
+/TSW.B2B.Entities/bin/Debug
+/TSW.B2B.Entities/obj/Debug
+/TSW.B2B.Repositories/bin/Debug
+/TSW.B2B.Repositories/obj/Debug
+/TSW-B2B.Web/bin
+/TSW-B2B.Web/obj/Debug
+/.vs/TSW-B2B/v14

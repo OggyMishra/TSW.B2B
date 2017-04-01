@@ -134,11 +134,15 @@
     <Compile Include="..\ProductVersion.cs">
       <Link>Properties\ProductVersion.cs</Link>
     </Compile>
-    <Compile Include="Classes\BaseRepository.cs" />
+    <Compile Include="Classes\ItemRepository.cs" />
+    <Compile Include="Classes\Repository.cs" />
     <Compile Include="Classes\UserRepository.cs" />
+    <Compile Include="Helper\DbCommandExtensions.cs" />
     <Compile Include="Interfaces\IBaseRepository.cs" />
+    <Compile Include="Interfaces\IItemRepository.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\QueryGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -152,6 +156,10 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TSW.B2B.Common\TSW.B2B.Common.csproj">
+      <Project>{A0509F96-BE42-4E5D-8C51-AFAA372CE904}</Project>
+      <Name>TSW.B2B.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TSW.B2B.Entities\TSW.B2B.Entities.csproj">
       <Project>{ac1010e6-de65-4460-ae64-bcb1adf3fd10}</Project>
       <Name>TSW.B2B.Entities</Name>

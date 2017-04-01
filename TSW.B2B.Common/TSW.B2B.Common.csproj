@@ -133,6 +133,12 @@
     <Compile Include="Constants\ConnectionStrings.cs" />
     <Compile Include="Constants\GlobalConstants.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Implementation\DbConnectionFactory.cs" />
+    <Compile Include="Implementation\DbContext.cs" />
+    <Compile Include="Implementation\UnitOfWork.cs" />
+    <Compile Include="Interfaces\IConnectionFactory.cs" />
+    <Compile Include="Interfaces\IDbContext.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="LogInfoExtended.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Implementation\EncryptionHelper.cs" />

@@ -157,8 +157,10 @@
     <Compile Include="..\ProductVersion.cs">
       <Link>Properties\ProductVersion.cs</Link>
     </Compile>
+    <Compile Include="Classes\ItemService.cs" />
     <Compile Include="Classes\UserService.cs" />
     <Compile Include="Common\EntityConverter.cs" />
+    <Compile Include="Interfaces\IItemService.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
