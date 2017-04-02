@@ -4,14 +4,15 @@
 	using System.Linq;
 	using System.Threading.Tasks;
 	using Common.Implementation;
+	using Common.Interfaces;
 	using Entities;
 	using Helper;
 	using Interfaces;
 	using Queries;
 
 	public class ItemRepository : Repository<Item>, IItemRepository {
-		private DbContext context;
-		public ItemRepository(DbContext context) : base(context) {
+		private IDbContext context;
+		public ItemRepository(IDbContext context) : base(context) {
 			this.context = context;
 		}
 		public IEnumerable<Item> GetItems() {

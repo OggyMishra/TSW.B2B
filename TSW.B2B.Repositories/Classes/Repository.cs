@@ -4,16 +4,17 @@
 	using System.ComponentModel;
 	using System.Data;
 	using Common.Implementation;
+	using Common.Interfaces;
 	using Helper;
 
 	public abstract class Repository<TEntity> where TEntity : new() {
 		private const int pageSize = 50;
 		private const int pageNumber = 0;
-		private DbContext context;
-		public Repository(DbContext context) {
+		private IDbContext context;
+		public Repository(IDbContext context) {
 			this.context = context;
 		}
-		protected DbContext Context
+		protected IDbContext Context
 		{
 			get
 			{

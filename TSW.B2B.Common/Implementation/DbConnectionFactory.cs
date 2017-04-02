@@ -9,7 +9,8 @@
 		private readonly DbProviderFactory provider;
 		private readonly string connectionString;
 		private readonly string name;
-		public DbConnectionFactory(string connectionName) {
+		public DbConnectionFactory() {
+			string connectionName = "EstimateHistory";
 			if (connectionName == null) throw new ArgumentNullException("connectionName");
 
 			var conStr = ConfigurationManager.ConnectionStrings[connectionName];
