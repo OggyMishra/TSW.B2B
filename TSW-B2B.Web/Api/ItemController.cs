@@ -27,7 +27,7 @@
 		/// Gets the items.
 		/// </summary>
 		/// <returns></returns>
-		[Route("getitems")]
+		[Route("items")]
 		[HttpGet]
 		public HttpResponseMessage GetItems() {
 			HttpResponseMessage response = null;
@@ -43,14 +43,14 @@
 		/// <summary>
 		/// Gets the item by id.
 		/// </summary>
-		/// <param name="itemId">The item identifier.</param>
+		/// <param name="itemid">The item identifier.</param>
 		/// <returns></returns>
-		[Route("getitemById/{itemId}")]
+		[Route("item/{itemid}")]
 		[HttpGet]
-		public HttpResponseMessage GetItemById(int itemId) {
+		public HttpResponseMessage GetItemById(int itemid) {
 			HttpResponseMessage response = null;
 			try {
-				var result = this.itemService.GetItemById(itemId);
+				var result = this.itemService.GetItemById(itemid);
 				response = Request.CreateResponse(HttpStatusCode.OK, result);
 			} catch (Exception ex) {
 				response = Request.CreateResponse(HttpStatusCode.InternalServerError, ex);
@@ -62,14 +62,14 @@
 		/// Gets the items using pageSize.
 		/// </summary>
 		/// <param name="pageNo">The page no.</param>
-		/// <param name="pageSize">Size of the page.</param>
+		/// <param name="pagesize">Size of the page.</param>
 		/// <returns></returns>
-		[Route("getitems/{pageNo}/{pageSize}")]
+		[Route("items/{pageno}/{pagesize}")]
 		[HttpGet]
-		public HttpResponseMessage GetItems(int pageNo, int pageSize) {
+		public HttpResponseMessage GetItems(int pageno, int pagesize) {
 			HttpResponseMessage response = null;
 			try {
-				var result = this.itemService.GetItems(pageNo, pageSize);
+				var result = this.itemService.GetItems(pageno, pagesize);
 				response = Request.CreateResponse(HttpStatusCode.OK, result);
 			} catch (Exception ex) {
 				response = Request.CreateResponse(HttpStatusCode.InternalServerError, ex);
@@ -79,14 +79,14 @@
 		/// <summary>
 		/// Deletes the by identifier.
 		/// </summary>
-		/// <param name="itemId">The item identifier.</param>
+		/// <param name="itemid">The item identifier.</param>
 		/// <returns></returns>
-		[Route("deleteitembyid/{itemId}")]
+		[Route("delete/{itemid}")]
 		[HttpDelete]
-		public HttpResponseMessage DeleteById(int itemId) {
+		public HttpResponseMessage DeleteById(int itemid) {
 			HttpResponseMessage response = null;
 			try {
-				var result = this.itemService.DeleteById(itemId);
+				var result = this.itemService.DeleteById(itemid);
 				response = Request.CreateResponse(HttpStatusCode.OK, result);
 			} catch (Exception ex) {
 				response = Request.CreateResponse(HttpStatusCode.InternalServerError, ex);
@@ -96,14 +96,14 @@
 		/// <summary>
 		/// Creates the item.
 		/// </summary>
-		/// <param name="itemDetails">The item details.</param>
+		/// <param name="itemdetail">The item details.</param>
 		/// <returns></returns>
 		[HttpPost]
-		[Route("createitem/itemDetail")]
-		public HttpResponseMessage CreateItem(BusinessObjects.Item itemDetails) {
+		[Route("create/itemdetail")]
+		public HttpResponseMessage CreateItem(BusinessObjects.Item itemdetail) {
 			HttpResponseMessage response = null;
 			try {
-				var result = this.itemService.AddItem(itemDetails);
+				var result = this.itemService.AddItem(itemdetail);
 				response = Request.CreateResponse(HttpStatusCode.OK, result);
 			} catch (Exception ex) {
 				response = Request.CreateResponse(HttpStatusCode.InternalServerError, ex);

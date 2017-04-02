@@ -43,6 +43,7 @@
 			container.RegisterType(typeof(IItemRepository), typeof(ItemRepository));
 			container.RegisterType(typeof(IConnectionFactory), typeof(DbConnectionFactory));
 			container.RegisterType(typeof(IDbContext), typeof(DbContext));
+			container.RegisterType(typeof(ITransactionService), typeof(TransactionService));
 		}
 		#endregion
 	}

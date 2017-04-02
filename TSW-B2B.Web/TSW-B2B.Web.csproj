@@ -399,6 +399,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\ItemController.cs" />
+    <Compile Include="Api\TransactionController.cs" />
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\UnityConfiguration.cs" />
     <Compile Include="BaseController\BaseController.cs" />
